@@ -1,6 +1,8 @@
 public class TiposPrimitivos{
     public static void main(String[] args){
 
+        /* Tipos primitivos são tipos incorporados pela própria linguagem e representam dados simples e básicos. */
+
         //Números inteiros
         byte valorByte = 127; //Aceita números de -128 até 127
         short valorShort = 32767; //Aceita números de -32768 até 32767
@@ -10,7 +12,7 @@ public class TiposPrimitivos{
 
         //Números flutuantes ou com casas decimais
         float valorFloat = 3.14f; //Números com poucas casas decimais e requer menos espaço na memória. Sempre precisa do 'f' depois da atribuição do valor
-        double valorDouble = 3.145844111; //Números com o dobro de casas decimais do float aceitas. Toma mais espaço na memória.
+        double valorDouble = 3.145844111; //Números com o dobro de casas decimais que o float aceita. Toma mais espaço na memória.
 
         //Caracteres
         char valorChar = 'A'; //Tipo char, só aceita 1 caracter por vez que só pode ser atrbuido com aspas simples [''].
