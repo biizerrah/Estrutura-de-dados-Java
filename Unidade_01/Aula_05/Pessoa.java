@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Pessoa {
 
     //Atributos
@@ -49,15 +51,28 @@ public class Pessoa {
     };
 
     public static void main(String[] args){
+       
 
-        Pessoa pessoa = new Pessoa("Tatiana", 30, 94.0f);
+        /*Pessoa pessoa = new Pessoa("Tatiana", 30, 94.0f);
         //pessoa.mostrarInfo();
         //pessoa.niver();
         pessoa.mostrarInfo();
         pessoa.setAge(36);
         pessoa.mostrarInfo();
         pessoa.setName("Ticiana");
-        pessoa.mostrarInfo();
+        pessoa.mostrarInfo(); */
+
+        Scanner teclado = new Scanner(System.in);
+        System.out.print("Digite seu nome: ");
+        String nome = teclado.nextLine();
+        System.out.print("Digite a sua idade: ");
+        int idade = teclado.nextInt();
+        System.out.print("Digite o seu peso: ");
+        float peso = teclado.nextFloat();
+        teclado.close();
+
+        Pessoa pessoa2 = new Pessoa(nome,idade,peso);
+        pessoa2.mostrarInfo();
 
     }
 };
